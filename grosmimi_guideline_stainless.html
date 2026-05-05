@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>グロミミ コンテンツガイドライン（有償）— ステンレスストローマグ</title>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: #f5f5f3;
+  color: #1a1a1a;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.page {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 60px 40px 80px;
+}
+
+/* ===== HERO ===== */
+.hero {
+  background: #fff;
+  border-radius: 20px;
+  padding: 52px 48px;
+  margin-bottom: 32px;
+  border: 1px solid #e8e8e6;
+  position: relative;
+  overflow: hidden;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0; right: 0;
+  width: 300px; height: 100%;
+  opacity: 0.04;
+  pointer-events: none;
+}
+.hero-eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.hero-eyebrow::before {
+  content: '';
+  display: inline-block;
+  width: 24px; height: 2px;
+  border-radius: 2px;
+}
+.hero h1 {
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin-bottom: 14px;
+  color: #111;
+}
+.hero-product {
+  font-size: 14px;
+  font-weight: 400;
+  color: #888;
+  letter-spacing: 0.03em;
+}
+
+/* ===== SECTION ===== */
+.section {
+  margin-bottom: 28px;
+}
+.section-label {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  padding-left: 2px;
+}
+.section-subtitle {
+  font-size: 13px;
+  font-weight: 700;
+  color: #333;
+  margin: 20px 0 8px;
+  padding-left: 2px;
+}
+
+/* ===== TABLE CARD ===== */
+.table-card {
+  background: #fff;
+  border: 1px solid #e8e8e6;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.table-card-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: #555;
+  letter-spacing: 0.05em;
+  padding: 13px 20px;
+  background: #fafafa;
+  border-bottom: 1px solid #eee;
+}
+.trow {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  border-bottom: 1px solid #f0f0ee;
+}
+.trow:last-child { border-bottom: none; }
+.tlabel {
+  padding: 14px 20px;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #999;
+  background: #fafafa;
+  border-right: 1px solid #f0f0ee;
+  display: flex;
+  align-items: flex-start;
+  letter-spacing: 0.02em;
+}
+.tvalue {
+  padding: 14px 20px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.8;
+  white-space: pre-line;
+}
+
+/* ===== DIVIDER ===== */
+.divider {
+  height: 1px;
+  background: #e8e8e6;
+  margin: 40px 0;
+}
+
+/* ===== PRODUCT HEADING ===== */
+.product-heading {
+  background: #fff;
+  border: 1px solid #e8e8e6;
+  border-radius: 14px;
+  padding: 28px 32px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.product-icon {
+  width: 48px; height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+.product-heading-title {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+.product-heading-sub {
+  font-size: 12px;
+  color: #999;
+  margin-top: 3px;
+}
+
+/* ===== CATEGORY CARD ===== */
+.cat-card {
+  background: #fff;
+  border: 1px solid #e8e8e6;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+.cat-header {
+  padding: 16px 20px;
+  border-bottom: 1px solid #f0f0ee;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.cat-badge {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  padding: 4px 10px;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+.cat-title-text {
+  font-size: 15px;
+  font-weight: 700;
+  color: #111;
+}
+.cat-body {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+}
+.cat-key {
+  padding: 15px 20px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #aaa;
+  background: #fafafa;
+  border-right: 1px solid #f0f0ee;
+  border-bottom: 1px solid #f0f0ee;
+  display: flex;
+  align-items: flex-start;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.cat-val {
+  padding: 15px 20px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.85;
+  border-bottom: 1px solid #f0f0ee;
+  white-space: pre-line;
+}
+.cat-row-last .cat-key,
+.cat-row-last .cat-val {
+  border-bottom: none;
+}
+
+/* ===== NG SECTION ===== */
+.ng-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+.ng-card {
+  background: #fff;
+  border: 1px solid #ffd0d0;
+  border-radius: 12px;
+  padding: 16px 18px;
+}
+.ng-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #e03333;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.ng-x {
+  width: 16px; height: 16px;
+  background: #e03333;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 9px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.ng-text {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.7;
+}
+
+/* ===== SNS ===== */
+.sns-card {
+  background: #fff;
+  border: 1px solid #e8e8e6;
+  border-radius: 14px;
+  padding: 24px 28px;
+  display: flex;
+  gap: 48px;
+}
+.sns-label {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #bbb;
+  margin-bottom: 6px;
+}
+.sns-value {
+  font-size: 14px;
+  font-weight: 600;
+  color: #222;
+}
+
+@media print {
+  body { background: #f5f5f3 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .cat-card, .table-card, .hero, .product-heading, .ng-card, .sns-card { break-inside: avoid; }
+}
+
+.hero-eyebrow { color: #3B7DBF; }
+.hero-eyebrow::before { background: #3B7DBF; }
+.hero h1 span { color: #3B7DBF; }
+.section-label { color: #3B7DBF; }
+.tlabel { color: #3B7DBF; opacity: 0.7; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-eyebrow">有償 Content Guideline</div>
+    <h1>グロミミ<br><span>コンテンツガイドライン</span></h1>
+    <p class="hero-product">ステンレスストローマグ</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PRODUCT -->
+  <div class="product-heading">
+    <div class="product-icon" style="background:#EEF4FB;">🥤</div>
+    <div>
+      <div class="product-heading-title" style="color:#3B7DBF;">ステンレスストローマグ</div>
+      <div class="product-heading-sub">各カテゴリのシーン構成・撮影ポイント・ナレーション例・テロップ例を参考に制作してください</div>
+    </div>
+  </div>
+
+  <!-- CATEGORIES -->
+  <div class="section">
+    <div class="section-label">Content Categories — カテゴリ</div>
+    
+    <div class="cat-card">
+      <div class="cat-header">
+        <span class="cat-badge" style="background:#EEF4FB;color:#3B7DBF;">CAT A</span>
+        <span class="cat-title-text">316ステンレス素材・保温保冷</span>
+      </div>
+      <div class="cat-body"><div class="cat-key">フック</div><div class="cat-val">「赤ちゃんのマグに医療レベルのステンレスって聞いたことある？」</div><div class="cat-key">撮影シーン</div><div class="cat-val">・商品アップで「316」素材をテロップで紹介
+・夏に冷たい飲み物・冬に温かい飲み物を飲ませている場面
+・シームレス構造（縫ぎ目なし）のアップ</div><div class="cat-key">ナレーション例</div><div class="cat-val">「内側にSUS316、医療レベルの高品質ステンレスを使用。二重真空断熱構造で最大6時間、飲み物の温かさ・冷たさをキープします。縫ぎ目のないシームレス構造だから変色・雑菌の心配もなし」</div><div class="cat-key">テロップ例</div><div class="cat-val">「医療レベル SUS316ステンレス使用」
+「最大6時間 保温・保冷キープ」
+「シームレス構造：変色・雑菌を防ぐ」</div><div class="cat-key cat-row-last">キャプション例</div><div class="cat-val cat-row-last">「温度キープ6時間、赤ちゃんにも本物を」</div></div>
+    </div>
+    <div class="cat-card">
+      <div class="cat-header">
+        <span class="cat-badge" style="background:#EEF4FB;color:#3B7DBF;">CAT B</span>
+        <span class="cat-title-text">漏れない設計（クロスカットストロー）</span>
+      </div>
+      <div class="cat-body"><div class="cat-key">フック</div><div class="cat-val">「ステンレスなのに漏れないって、どういうこと？」</div><div class="cat-key">撮影シーン</div><div class="cat-val">・プレミアムシリコンストローのアップ
+・マグをひっくり返しても漏れない実演（任意）
+・バッグに入れて持ち歩いている場面</div><div class="cat-key">ナレーション例</div><div class="cat-val">「クロスカットのシリコンストローで、傾けても漏れない。バッグの中でも安心です」</div><div class="cat-key">テロップ例</div><div class="cat-val">「クロスカットストロー：逆さにしても漏れない」
+「バッグの中でも安心」</div><div class="cat-key cat-row-last">キャプション例</div><div class="cat-val cat-row-last">「バッグの中で漏れたことゼロ」</div></div>
+    </div>
+    <div class="cat-card">
+      <div class="cat-header">
+        <span class="cat-badge" style="background:#EEF4FB;color:#3B7DBF;">CAT C</span>
+        <span class="cat-title-text">お手入れ簡単</span>
+      </div>
+      <div class="cat-body"><div class="cat-key">フック</div><div class="cat-val">「ステンレスマグって洗いにくいイメージない？これは違った」</div><div class="cat-key">撮影シーン</div><div class="cat-val">・キャップ・ストロー・シリコンカバーなど全パーツを分解して並べる
+・各パーツをさっと洗う場面
+・数秒で再組み立てする場面</div><div class="cat-key">ナレーション例</div><div class="cat-val">「シリコンの先端からストラップまで、すべてのパーツが取り外せるので徹底的に清潔に洗えます。再組み立ても数秒で完了」</div><div class="cat-key">テロップ例</div><div class="cat-val">「全パーツ取り外し可能」
+「再組み立て数秒」
+「毎日清潔に保てる」</div><div class="cat-key cat-row-last">キャプション例</div><div class="cat-val cat-row-last">「全部外せるから、毎日気持ちよく使える」</div></div>
+    </div>
+    <div class="cat-card">
+      <div class="cat-header">
+        <span class="cat-badge" style="background:#EEF4FB;color:#3B7DBF;">CAT D</span>
+        <span class="cat-title-text">アウトドア・お出かけシーン（季節感）</span>
+      </div>
+      <div class="cat-body"><div class="cat-key">フック</div><div class="cat-val">夏：「お出かけ中ずっと冷たいまま、これ神じゃない？」
+冬：「外でも温かい飲み物あげられるって安心感が違う」</div><div class="cat-key">撮影シーン</div><div class="cat-val">夏：公園・海・ピクニックで子どもに飲ませる場面。冷たい飲み物を飲んで嬉しそうな表情
+冬：寒い外出先で温かい飲み物。ほっとした表情や湯気が見えると◎
+・360°回転ハンドルで子どもが持ちやすい場面もあると良い</div><div class="cat-key">ナレーション例</div><div class="cat-val">夏：「二重真空断熱で炎天下でもずっと冷たいまま。外遊びの必需品になりました」
+冬：「保温6時間だから、外出中もあったかい飲み物をあげられる安心感が違います」</div><div class="cat-key">テロップ例</div><div class="cat-val">夏：「炎天下でも冷たさキープ」「二重真空断熱構造」
+冬：「保温6時間」「冬のお出かけに最適」</div><div class="cat-key cat-row-last">キャプション例</div><div class="cat-val cat-row-last">夏：「これのおかげでお出かけが楽になった」
+冬：「冬の公園、これなしでは無理だった」</div></div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- NG -->
+  <div class="section">
+    <div class="section-label" style="color:#e03333;">NG — 必ずご確認ください</div>
+    <div class="ng-grid">
+    <div class="ng-card">
+      <div class="ng-label"><div class="ng-x">✕</div>他社商品の映り込み</div>
+      <div class="ng-text">冒頭3秒以内に他社商品を映さないでください。</div>
+    </div>
+    <div class="ng-card">
+      <div class="ng-label"><div class="ng-x">✕</div>宣伝・PR感</div>
+      <div class="ng-text">「ブランドからいただきました」等の表現はNGです。自分で選んだアイテムとして自然に紹介してください。</div>
+    </div>
+    <div class="ng-card">
+      <div class="ng-label"><div class="ng-x">✕</div>ウォーターマーク</div>
+      <div class="ng-text">テキストスタンプ・ウォーターマーク・他社ロゴは動画内に入れないでください。</div>
+    </div>
+    <div class="ng-card">
+      <div class="ng-label"><div class="ng-x">✕</div>鏡写し・反転映像</div>
+      <div class="ng-text">Grosmimiの文字が反転して映る映像はNGです。投稿前に文字が正しく読めるか確認してください。</div>
+    </div>
+    <div class="ng-card">
+      <div class="ng-label"><div class="ng-x">✕</div>著作権のある音楽</div>
+      <div class="ng-text">著作権フリーの音楽のみ使用してください。人気楽曲・テレビ曲・アーティスト楽曲はNGです。</div>
+    </div>
+    <div class="ng-card">
+      <div class="ng-label"><div class="ng-x">✕</div>未承認での投稿</div>
+      <div class="ng-text">投稿前に必ず弊社チームの確認・承認を受けてください。承認前のアップロードはお控えください。</div>
+    </div></div>
+  </div>
+
+  <!-- SNS -->
+  <div class="section">
+    <div class="section-label">SNS</div>
+    <div class="sns-card">
+      <div>
+        <div class="sns-label">Instagram</div>
+        <div class="sns-value" style="color:#3B7DBF;">@grosmimi_japan</div>
+      </div>
+      <div>
+        <div class="sns-label">Hashtags</div>
+        <div class="sns-value">#グロミミ　#Grosmimi　#ストローマグ　#スマートマグ　#ppsu</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

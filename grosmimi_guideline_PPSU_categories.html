@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>グロミミ PPSUカテゴリーガイドライン</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap');
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: #f5f5f3;
+  color: #1a1a1a;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.page { max-width: 860px; margin: 0 auto; padding: 48px 40px 80px; }
+
+/* HERO */
+.hero {
+  background: #fff; border-radius: 20px; padding: 44px 48px;
+  margin-bottom: 0; border: 1px solid #e8e8e6;
+}
+.hero-eyebrow {
+  font-size: 11px; font-weight: 700; letter-spacing: 0.2em;
+  text-transform: uppercase; margin-bottom: 14px;
+  display: flex; align-items: center; gap: 10px; color: #D4527A;
+}
+.hero-eyebrow::before {
+  content: ''; display: inline-block; width: 24px; height: 2px;
+  border-radius: 2px; background: #D4527A;
+}
+.hero h1 {
+  font-size: 30px; font-weight: 900; letter-spacing: -0.03em;
+  line-height: 1.15; color: #111;
+}
+.hero h1 span { color: #D4527A; }
+.hero-sub { font-size: 13px; color: #999; margin-top: 10px; }
+
+/* TAB NAV */
+.tab-nav-outer {
+  position: sticky; top: 0; z-index: 100;
+  background: #f5f5f3; padding: 16px 0 0;
+  border-bottom: 2px solid #e0ddd9;
+}
+.tab-nav {
+  max-width: 860px; margin: 0 auto; padding: 0 40px;
+  display: flex; gap: 4px;
+}
+.tab-btn {
+  padding: 9px 20px; border: none; background: none;
+  font-family: 'Noto Sans JP', sans-serif; font-size: 12.5px;
+  font-weight: 700; color: #aaa; cursor: pointer;
+  border-radius: 6px 6px 0 0; transition: all 0.15s; white-space: nowrap;
+  letter-spacing: 0.03em;
+}
+.tab-btn:hover { background: #ede9e4; color: #555; }
+.tab-btn.active { background: #D4527A; color: #fff; }
+
+.tab-content { display: none; }
+.tab-content.active { display: block; }
+
+/* SECTION */
+.section-wrapper { max-width: 860px; margin: 32px auto; padding: 0 40px; }
+.section-label {
+  font-size: 10px; font-weight: 800; letter-spacing: 0.25em;
+  text-transform: uppercase; margin-bottom: 16px;
+  padding-left: 2px; color: #D4527A;
+}
+
+/* CATEGORY CARD */
+.cat-card {
+  background: #fff; border: 1px solid #e8e8e6;
+  border-radius: 14px; overflow: hidden; margin-bottom: 12px;
+}
+.cat-header {
+  padding: 16px 20px; border-bottom: 1px solid #f0f0ee;
+  display: flex; align-items: center; gap: 12px;
+}
+.cat-badge {
+  font-size: 10px; font-weight: 800; letter-spacing: 0.12em;
+  padding: 4px 10px; border-radius: 6px; flex-shrink: 0;
+  background: #FDF0F4; color: #D4527A;
+}
+.cat-title-text { font-size: 15px; font-weight: 700; color: #111; }
+.cat-body { display: grid; grid-template-columns: 120px 1fr; }
+.cat-key {
+  padding: 15px 20px; font-size: 11px; font-weight: 700;
+  color: #D4527A; opacity: 0.7; background: #fafafa;
+  border-right: 1px solid #f0f0ee; border-bottom: 1px solid #f0f0ee;
+  display: flex; align-items: flex-start;
+  letter-spacing: 0.04em; text-transform: uppercase;
+}
+.cat-val {
+  padding: 15px 20px; font-size: 13px; color: #333;
+  line-height: 1.85; border-bottom: 1px solid #f0f0ee; white-space: pre-line;
+}
+.cat-row-last .cat-key,
+.cat-row-last .cat-val { border-bottom: none; }
+
+.footer { text-align: center; padding: 30px 0 40px; color: #b0a090; font-size: 11.5px; }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="hero">
+    <div class="hero-eyebrow">Category Guide</div>
+    <h1>グロミミ <span>カテゴリーガイドライン</span></h1>
+    <div class="hero-sub">フック・撮影シーン・ナレーション例・テロップ例・キャプション例</div>
+  </div>
+</div>
+
+<!-- TAB NAV -->
+<div class="tab-nav-outer">
+  <div class="tab-nav">
+    <button class="tab-btn active" onclick="showTab('catA', this)">カテゴリーA</button>
+    <button class="tab-btn" onclick="showTab('catB', this)">カテゴリーB</button>
+    <button class="tab-btn" onclick="showTab('catC', this)">カテゴリーC</button>
+    <button class="tab-btn" onclick="showTab('catD', this)">カテゴリーD</button>
+    <button class="tab-btn" onclick="showTab('catE', this)">カテゴリーE</button>
+  </div>
+</div>
+
+<!-- カテゴリーA -->
+<div id="tab-catA" class="tab-content active">
+  <div class="section-wrapper">
+    <div class="section-label">Category A / PPSU素材の安全性</div>
+    <div class="cat-card">
+      <div class="cat-header">
+        <span class="cat-badge">CAT A</span>
+        <span class="cat-title-text">PPSU素材の安全性</span>
+      </div>
+      <div class="cat-body">
+        <div class="cat-key">フック</div><div class="cat-val">「素材気にしてなかった〜」
+「ppsuって知ってる？」</div>
+        <div class="cat-key">撮影シーン</div><div class="cat-val">・自分が使っていた普通のPPマグを持って話す場面
+・スマホで調べている場面（「マイクロプラスチック」などの検索画面や記事）
+・グロミミのマグに切り替わる場面
+・子どもが安心して使っている日常シーン</div>
+        <div class="cat-key">ナレーション例</div><div class="cat-val">「正直マグの素材なんて全然気にしてなかったんやけど、ある日たまたま調べたらびっくりして。PP素材って熱が加わるとマイクロプラスチックが溶け出すリスクがあるらしくて、しかも環境省やWHOも注意喚起してるって知って。毎日子どもに使わせてたのに全然知らんかった…。それから素材にこだわったマグに変えたんよね。PPSUはその心配がなくて、耐熱温度もPPの約100℃に対してPPSUは200℃。熱にも強いし安心して使えるから、これにしてよかったって思ってる」</div>
+        <div class="cat-key">テロップ例</div><div class="cat-val">「PP素材：耐熱約100℃ / マイクロプラスチック溶出リスクあり」
+「PPSU：耐熱約200℃ / 溶出リスクなし」
+「環境省・WHO　マイクロプラスチックのリスクを警告」</div>
+        <div class="cat-key cat-row-last">キャプション例</div><div class="cat-val cat-row-last">「知らんかった自分が怖すぎた」
+「PPのマグ使ってる人に届いてほしい」</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- カテゴリーB -->
+<div id="tab-catB" class="tab-content">
+  <div class="section-wrapper">
+    <div class="section-label">Category B / 漏れない設計</div>
+    <div class="cat-card">
+      <div class="cat-header">
+        <span class="cat-badge">CAT B</span>
+        <span class="cat-title-text">漏れない設計</span>
+      </div>
+      <div class="cat-body">
+        <div class="cat-key">フック</div><div class="cat-val">「このストロー、逆にしても漏れないって知ってた？」</div>
+        <div class="cat-key">撮影シーン</div><div class="cat-val">・マグを思い切り振っても漏れない実演
+・マグをひっくり返しても漏れない実演
+・クロスカットストローのアップ</div>
+        <div class="cat-key">ナレーション例</div><div class="cat-val">「ストローマグって、バッグの中でひっくり返ってたり、子どもが振り回したりして漏れるのが地味にストレスやったんやけど、グロミミのクロスカットストローは逆さにしても振っても全然漏れないんよ。バッグの中も毎回ヒヤヒヤしなくていいし、子どもがどんな姿勢で飲んでても安心。これだけでもう替えられへんってなった」</div>
+        <div class="cat-key">テロップ例</div><div class="cat-val">「クロスカットストロー：逆さにしても漏れない」</div>
+        <div class="cat-key cat-row-last">キャプション例</div><div class="cat-val cat-row-last">「どの姿勢でも漏れない、それだけで神」</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- カテゴリーC -->
+<div id="tab-catC" class="tab-content">
+  <div class="section-wrapper">
+    <div class="section-label">Category C / 発達サポート</div>
+    <div class="cat-card">
+      <div class="cat-header">
+        <span class="cat-badge">CAT C</span>
+        <span class="cat-title-text">発達サポート</span>
+      </div>
+      <div class="cat-body">
+        <div class="cat-key">フック</div><div class="cat-val">「マグ選びが発達に関係するって知ってた？」</div>
+        <div class="cat-key">撮影シーン</div><div class="cat-val">・子どもが自分でストローをくわえる場面（口腔サポート）
+・ハンドルを両手で握る場面（微細運動）
+・自分でふたを開けようとする場面（自立サポート）
+・できた瞬間の表情をアップで</div>
+        <div class="cat-key">ナレーション例</div><div class="cat-val">「口腔発達を促すストロー設計、両手で握れるハンドル、自分で操作できる設計で、赤ちゃんの成長をそっとサポートします」</div>
+        <div class="cat-key">テロップ例</div><div class="cat-val">「口腔サポート設計」「微細運動をサポートするハンドル」「自分で操作できる自立設計」</div>
+        <div class="cat-key cat-row-last">キャプション例</div><div class="cat-val cat-row-last">「飲む練習が、成長の練習になってた」</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- カテゴリーD -->
+<div id="tab-catD" class="tab-content">
+  <div class="section-wrapper">
+    <div class="section-label">Category D / お手入れ簡単</div>
+    <div class="cat-card">
+      <div class="cat-header">
+        <span class="cat-badge">CAT D</span>
+        <span class="cat-title-text">お手入れ簡単</span>
+      </div>
+      <div class="cat-body">
+        <div class="cat-key">フック</div><div class="cat-val">「毎日洗うから、洗いやすさは正義」</div>
+        <div class="cat-key">撮影シーン</div><div class="cat-val">・すべてのパーツを分解して並べる場面
+・各パーツをさっと洗う場面
+・数秒で再組み立てする場面
+・食洗機や煮沸してる場面（対応機種の場合）</div>
+        <div class="cat-key">ナレーション例</div><div class="cat-val">「すべてのパーツが取り外せるから隅々まで洗えて、再組み立ても数秒。毎日清潔に使えます」</div>
+        <div class="cat-key">テロップ例</div><div class="cat-val">「全パーツ分解可能」「食洗機対応」「再組み立て数秒」</div>
+        <div class="cat-key cat-row-last">キャプション例</div><div class="cat-val cat-row-last">「パーツ全部外せるの、これだけで買う理由になる」</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- カテゴリーE -->
+<div id="tab-catE" class="tab-content">
+  <div class="section-wrapper">
+    <div class="section-label">Category E / 日常使用シーン</div>
+    <div class="cat-card">
+      <div class="cat-header">
+        <span class="cat-badge">CAT E</span>
+        <span class="cat-title-text">日常使用シーン</span>
+      </div>
+      <div class="cat-body">
+        <div class="cat-key">フック</div><div class="cat-val">「公園も保育園も外食も、これ一本で全部いけた」</div>
+        <div class="cat-key">撮影シーン</div><div class="cat-val">・公園で子どもが自分で飲んでいる場面
+・保育園の準備でバッグに入れている場面
+・外食中にテーブルに置いてさりげなく映り込む場面
+・旅行・お出かけ先で使っている場面</div>
+        <div class="cat-key">ナレーション例</div><div class="cat-val">「公園でも、保育園でも、外食でも、旅行でも、気づいたらいつもこれをバッグに入れてる。軽くて子どもも自分で持ちやすいから、どこに行くときも迷わずこれ一本。荷物減らしたいときも、これがあれば安心やなってなってる」</div>
+        <div class="cat-key">テロップ例</div><div class="cat-val">「公園 / 保育園 / 外食 / 旅行」
+「軽量設計」「どこでも活躍」</div>
+        <div class="cat-key cat-row-last">キャプション例</div><div class="cat-val cat-row-last">「どこ行くときも気づいたらバッグに入れてた」
+「結局これが一番使いやすかった」</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">© Grosmimi Japan — Confidential / インフルエンサー様専用資料</div>
+
+<script>
+  function showTab(id, btn) {
+    document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+    document.getElementById('tab-' + id).classList.add('active');
+    btn.classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+</body>
+</html>
