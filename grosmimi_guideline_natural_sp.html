@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>グロミミ コンテンツガイドライン</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      background: #f7f4f0;
+      color: #3a3028;
+      font-size: 15px;
+      line-height: 1.75;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    .header {
+      background: #fff;
+      border-bottom: 3px solid #c4956a;
+      padding: 32px 20px 22px;
+      text-align: center;
+    }
+    .header-label {
+      font-size: 10px; letter-spacing: 3px; color: #c4956a;
+      text-transform: uppercase; font-weight: 500; margin-bottom: 8px;
+    }
+    .header-title {
+      font-size: 20px; font-weight: 700; color: #3a3028;
+      letter-spacing: 0.5px; margin-bottom: 5px;
+    }
+    .header-sub { font-size: 12px; color: #8a7060; font-weight: 300; }
+
+    .intro { padding: 20px 16px 0; }
+    .intro-box {
+      background: #fff; border-radius: 10px; padding: 18px 18px;
+      border-left: 4px solid #c4956a; font-size: 13.5px;
+      color: #5a4a3a; line-height: 1.85;
+    }
+    .intro-box p { margin-bottom: 8px; }
+    .intro-box p:last-child { margin-bottom: 0; }
+    .intro-note {
+      margin-top: 12px; padding: 10px 12px; background: #fdf5ed;
+      border-radius: 6px; font-size: 12px; color: #9a6a40; font-weight: 500;
+    }
+
+    .section-wrapper { padding: 20px 16px 0; }
+    .section-title {
+      font-size: 11px; font-weight: 700; letter-spacing: 2px; color: #c4956a;
+      text-transform: uppercase; margin-bottom: 12px;
+      padding-bottom: 8px; border-bottom: 1px solid #e8d8c4;
+    }
+
+    /* 必須要件 */
+    .requirement-grid { display: grid; gap: 10px; }
+    .req-row {
+      background: #fff; border-radius: 10px; padding: 14px 16px;
+    }
+    .req-label {
+      font-size: 12px; font-weight: 700; color: #c4956a;
+      margin-bottom: 6px;
+    }
+    .req-body { font-size: 13.5px; color: #4a3a2a; line-height: 1.8; }
+    .req-body ul { list-style: none; }
+    .req-body li { padding-left: 1em; text-indent: -1em; margin-bottom: 4px; }
+    .req-body li::before { content: "・"; color: #c4956a; }
+
+    /* 撮影ルール */
+    .rule-grid { display: grid; gap: 10px; }
+    .rule-card {
+      background: #fff; border-radius: 10px; padding: 14px 16px;
+      display: flex; align-items: flex-start; gap: 12px;
+    }
+    .rule-icon {
+      width: 36px; height: 36px; background: #fdf0e4; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 17px; flex-shrink: 0;
+    }
+    .rule-label { font-size: 13px; font-weight: 700; color: #3a3028; margin-bottom: 3px; }
+    .rule-value { font-size: 13px; color: #6a5a4a; line-height: 1.6; }
+
+    /* NG */
+    .ng-grid { display: grid; gap: 10px; }
+    .ng-row {
+      background: #fff; border-radius: 10px; padding: 14px 16px;
+      border-left: 3px solid #e07060;
+    }
+    .ng-label { font-size: 12px; font-weight: 700; color: #e07060; margin-bottom: 5px; }
+    .ng-value { font-size: 13.5px; color: #4a3a2a; line-height: 1.75; }
+
+    /* SNS */
+    .sns-grid { display: grid; gap: 10px; }
+    .sns-card { background: #fff; border-radius: 10px; padding: 14px 18px; }
+    .sns-platform {
+      font-size: 11px; font-weight: 700; color: #c4956a;
+      letter-spacing: 1px; text-transform: uppercase; margin-bottom: 4px;
+    }
+    .sns-value { font-size: 14px; color: #3a3028; font-weight: 500; }
+
+    .footer {
+      text-align: center; padding: 28px 0 36px;
+      color: #b0a090; font-size: 11px; margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-label">Content Guideline</div>
+  <div class="header-title">グロミミ コンテンツガイドライン</div>
+  <div class="header-sub">子どもの自然な姿を主役にしたコンテンツ用</div>
+</div>
+
+<div class="intro">
+  <div class="intro-box">
+    <p>平素よりお世話になっております。</p>
+    <p>以下は、今回の動画制作・投稿に関する必須要件となります。ご確認の上、ご対応をお願いいたします。</p>
+    <p>下記のカテゴリーを参考に、動画の制作をお願いいたします。各カテゴリーごとにシーン構成・撮影ポイント・キャプション例を記載しておりますので、ご自身のスタイルに合ったものをお選びください。</p>
+    <p>なお、参考動画の共有も可能ですので、必要な場合はお申し付けください。</p>
+    <div class="intro-note">※このガイドラインは「商品紹介」ではなく「子どもの自然な姿」を主役にしたコンテンツ用です。</div>
+  </div>
+</div>
+
+<!-- 必須要件 -->
+<div class="section-wrapper">
+  <div class="section-title">Required / 必須要件</div>
+  <div class="requirement-grid">
+    <div class="req-row">
+      <div class="req-label">オリジナル動画ファイルの提供</div>
+      <div class="req-body"><ul>
+        <li>弊社での二次利用を想定して、オリジナル動画ファイルをご提供ください。</li>
+        <li>使用する音楽は著作権フリーのものをご使用ください。</li>
+        <li>動画内に字幕（テロップ）は含めずにご提出ください。</li>
+      </ul></div>
+    </div>
+    <div class="req-row">
+      <div class="req-label">広告コードの付与</div>
+      <div class="req-body"><ul>
+        <li>投稿用にSpark Adsコード、もしくはホワイトリストコードへのアクセス許可をお願いいたします。</li>
+      </ul></div>
+    </div>
+    <div class="req-row">
+      <div class="req-label">投稿用動画コンテンツ</div>
+      <div class="req-body"><ul>
+        <li>インフルエンサー様が実際にSNSにアップロードする動画です。</li>
+        <li>動画には、音声および字幕を必ず含めていただきますようお願いいたします。（ナレーション形式でなくても問題ございません。）</li>
+        <li>【Instagramでの投稿】投稿時には共同投稿（コラボ投稿）としてGROSMIMI JAPAN（grosmimi_japan）アカウントを設定をお願いいたします。</li>
+      </ul></div>
+    </div>
+    <div class="req-row">
+      <div class="req-label">納期</div>
+      <div class="req-body"><ul>
+        <li>商品到着後、2〜3週間を目安にコンテンツのアップロードをお願いいたします。</li>
+      </ul></div>
+    </div>
+    <div class="req-row">
+      <div class="req-label">確認・承認</div>
+      <div class="req-body"><ul>
+        <li>投稿前に弊社チームにて内容を確認・承認させていただきます。</li>
+        <li>承認完了後にアップロードをお願いいたします。</li>
+        <li>※アップロード日は事前にご相談のうえ調整いたしますが、状況により変更となる場合がございます。</li>
+      </ul></div>
+    </div>
+  </div>
+</div>
+
+<!-- 撮影ルール -->
+<div class="section-wrapper">
+  <div class="section-title">Shooting Rules / 共通撮影ルール</div>
+  <div class="rule-grid">
+    <div class="rule-card">
+      <div class="rule-icon">📐</div>
+      <div><div class="rule-label">縦型撮影</div><div class="rule-value">9:16（リール対応）で撮影</div></div>
+    </div>
+    <div class="rule-card">
+      <div class="rule-icon">☀️</div>
+      <div><div class="rule-label">明るさ</div><div class="rule-value">自然光推奨</div></div>
+    </div>
+    <div class="rule-card">
+      <div class="rule-icon">⏱</div>
+      <div><div class="rule-label">尺</div><div class="rule-value">20〜30秒が理想。山場のシーンは長めに録っておく</div></div>
+    </div>
+    <div class="rule-card">
+      <div class="rule-icon">🔊</div>
+      <div><div class="rule-label">音</div><div class="rule-value">飲む音・笑い声・環境音はそのまま残す（カットしない）</div></div>
+    </div>
+    <div class="rule-card">
+      <div class="rule-icon">📝</div>
+      <div><div class="rule-label">字幕</div><div class="rule-value">音声に合わせた字幕の挿入をお願いいたします</div></div>
+    </div>
+    <div class="rule-card">
+      <div class="rule-icon">🎥</div>
+      <div><div class="rule-label">マグの映り方</div><div class="rule-value">さりげなく映り込む程度でOK</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- NG事項 -->
+<div class="section-wrapper">
+  <div class="section-title">NG / 禁止事項（必ずご確認ください）</div>
+  <div class="ng-grid">
+    <div class="ng-row">
+      <div class="ng-label">冒頭の商品アップ</div>
+      <div class="ng-value">動画の冒頭3秒以内に他ブランドの商品を入れないでください。</div>
+    </div>
+    <div class="ng-row">
+      <div class="ng-label">宣伝・PR感</div>
+      <div class="ng-value">「ブランドからいただきました」「提供品です」という表現や雰囲気を出さないでください。自分で選んだアイテムとして自然に紹介してください。</div>
+    </div>
+    <div class="ng-row">
+      <div class="ng-label">ウォーターマーク</div>
+      <div class="ng-value">テキストスタンプ・ウォーターマーク・他社ロゴは動画内に入れないでください。</div>
+    </div>
+    <div class="ng-row">
+      <div class="ng-label">鏡写し・反転映像</div>
+      <div class="ng-value">商品ラベル・ブランド名（Grosmimi）が反転して映る鏡写し映像はNGです。投稿前に文字が正しく読めるか必ず確認してください。</div>
+    </div>
+    <div class="ng-row">
+      <div class="ng-label">著作権のある音楽</div>
+      <div class="ng-value">著作権フリーの音楽のみ使用してください。人気楽曲・テレビ曲・アーティスト楽曲はNGです（二次利用時に問題になります）。</div>
+    </div>
+    <div class="ng-row">
+      <div class="ng-label">未承認での投稿</div>
+      <div class="ng-value">動画の投稿前に必ず弊社チームの確認・承認を受けてください。承認前のアップロードはお控えください。</div>
+    </div>
+  </div>
+</div>
+
+<!-- SNS -->
+<div class="section-wrapper">
+  <div class="section-title">SNS / アカウント情報</div>
+  <div class="sns-grid">
+    <div class="sns-card">
+      <div class="sns-platform">Instagram</div>
+      <div class="sns-value">@grosmimi_japan</div>
+    </div>
+    <div class="sns-card">
+      <div class="sns-platform">TikTok</div>
+      <div class="sns-value">grosmimi_japan</div>
+    </div>
+    <div class="sns-card">
+      <div class="sns-platform">ハッシュタグ</div>
+      <div class="sns-value">#グロミミ #Grosmimi #ストローマグ #スマートマグ #ppsu</div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">© Grosmimi Japan — Confidential / インフルエンサー様専用資料</div>
+
+</body>
+</html>

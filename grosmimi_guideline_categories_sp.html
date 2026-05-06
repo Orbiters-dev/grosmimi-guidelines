@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>グロミミ カテゴリーガイドライン</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      background: #f7f4f0;
+      color: #3a3028;
+      font-size: 15px;
+      line-height: 1.75;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    .header {
+      background: #fff;
+      border-bottom: 3px solid #c4956a;
+      padding: 32px 20px 22px;
+      text-align: center;
+    }
+    .header-label {
+      font-size: 10px; letter-spacing: 3px; color: #c4956a;
+      text-transform: uppercase; font-weight: 500; margin-bottom: 8px;
+    }
+    .header-title {
+      font-size: 20px; font-weight: 700; color: #3a3028;
+      letter-spacing: 0.5px; margin-bottom: 5px;
+    }
+    .header-sub { font-size: 12px; color: #8a7060; font-weight: 300; }
+
+    /* Tab nav */
+    .tab-nav-outer {
+      position: sticky; top: 0; z-index: 100;
+      background: #f7f4f0; padding: 12px 0 0;
+      border-bottom: 2px solid #e8d8c4;
+    }
+    .tab-nav {
+      display: flex; overflow-x: auto; padding: 0 16px; gap: 6px;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+    .tab-nav::-webkit-scrollbar { display: none; }
+    .tab-btn {
+      padding: 10px 18px; border: none; background: none;
+      font-family: 'Noto Sans JP', sans-serif; font-size: 13px;
+      font-weight: 600; color: #8a7060; cursor: pointer;
+      border-radius: 6px 6px 0 0; white-space: nowrap;
+      flex-shrink: 0; transition: all 0.15s;
+    }
+    .tab-btn.active { background: #c4956a; color: #fff; }
+
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+
+    .section-wrapper { padding: 20px 16px 0; }
+    .section-title {
+      font-size: 11px; font-weight: 700; letter-spacing: 2px; color: #c4956a;
+      text-transform: uppercase; margin-bottom: 12px;
+      padding-bottom: 8px; border-bottom: 1px solid #e8d8c4;
+    }
+
+    .category-block { margin-bottom: 0; }
+    .category-header {
+      background: #c4956a; color: #fff; padding: 13px 16px;
+      border-radius: 10px 10px 0 0; font-size: 14px; font-weight: 700;
+    }
+    .category-body {
+      background: #fff; border-radius: 0 0 10px 10px; overflow: hidden;
+    }
+    .no-item { border-top: 1px solid #f0e8e0; }
+    .no-item:first-child { border-top: none; }
+    .no-header {
+      background: #fdf5ed; padding: 11px 16px;
+      font-size: 13px; font-weight: 700; color: #8a5a30;
+    }
+    .no-body { padding: 16px 16px; display: grid; gap: 14px; }
+
+    .field-block { display: grid; gap: 6px; }
+    .field-label {
+      font-size: 11px; font-weight: 700; color: #c4956a;
+      background: #fdf0e4; padding: 3px 10px; border-radius: 4px;
+      display: inline-block;
+    }
+    .field-value { font-size: 14px; color: #4a3a2a; line-height: 1.8; }
+    .field-value ul { list-style: none; }
+    .field-value li {
+      padding-left: 1em; text-indent: -1em; margin-bottom: 4px;
+    }
+    .field-value li::before { content: "・"; color: #c4956a; }
+
+    .footer {
+      text-align: center; padding: 28px 0 44px;
+      color: #b0a090; font-size: 11px; margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-label">Category Guide</div>
+  <div class="header-title">グロミミ カテゴリーガイドライン</div>
+  <div class="header-sub">撮影シーン・フック・キャプション例</div>
+</div>
+
+<div class="tab-nav-outer">
+  <div class="tab-nav">
+    <button class="tab-btn active" onclick="showTab('catA', this)">カテゴリーA</button>
+    <button class="tab-btn" onclick="showTab('catB', this)">カテゴリーB</button>
+    <button class="tab-btn" onclick="showTab('catC', this)">カテゴリーC</button>
+    <button class="tab-btn" onclick="showTab('catD', this)">カテゴリーD</button>
+    <button class="tab-btn" onclick="showTab('catE', this)">カテゴリーE</button>
+  </div>
+</div>
+
+<!-- カテゴリーA -->
+<div id="tab-catA" class="tab-content active">
+  <div class="section-wrapper">
+    <div class="section-title">Category A / 感動・初めて系</div>
+    <div class="category-block">
+      <div class="category-header">カテゴリーA　感動・初めて系</div>
+      <div class="category-body">
+        <div class="no-item">
+          <div class="no-header">No.1　初めてストローで飲めた瞬間</div>
+          <div class="no-body">
+            <div class="field-block">
+              <div class="field-label">フック</div>
+              <div class="field-value">「2ヶ月挑戦してたんやけど…」</div>
+            </div>
+            <div class="field-block">
+              <div class="field-label">撮影シーン</div>
+              <div class="field-value"><ul>
+                <li>ストローを口に近づける場面から録画開始</li>
+                <li>成功した瞬間の顔アップ（口元 + 目が両方映る角度）</li>
+                <li>親のリアクションも入れてOK（むしろ欲しい）</li>
+              </ul></div>
+            </div>
+            <div class="field-block">
+              <div class="field-label">キャプション例</div>
+              <div class="field-value">「飲めた！！！！！」のテキストだけでいい。</div>
+            </div>
+          </div>
+        </div>
+        <div class="no-item">
+          <div class="no-header">No.2　初めて「もっとちょうだい」サインをした瞬間</div>
+          <div class="no-body">
+            <div class="field-block">
+              <div class="field-label">フック</div>
+              <div class="field-value">「え、今おかわりって言った？」</div>
+            </div>
+            <div class="field-block">
+              <div class="field-label">撮影シーン</div>
+              <div class="field-value"><ul>
+                <li>空になったマグを差し出してくる場面</li>
+                <li>逆さにして「ない」と気づく一連の流れ</li>
+                <li>困り顔 or 催促する表情のアップ</li>
+              </ul></div>
+            </div>
+            <div class="field-block">
+              <div class="field-label">キャプション例</div>
+              <div class="field-value">「空っぽになったのを自分で気づいてた。もう赤ちゃんじゃないな」</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- カテゴリーB -->
+<div id="tab-catB" class="tab-content">
+  <div class="section-wrapper">
+    <div class="section-title">Category B / コミカル・あるある系</div>
+    <div class="category-block">
+      <div class="category-header">カテゴリーB　コミカル・あるある系</div>
+      <div class="category-body">
+        <div class="no-item">
+          <div class="no-header">No.3　飲みながら踊ってる</div>
+          <div class="no-body">
+            <div class="field-block">
+              <div class="field-label">フック</div>
+              <div class="field-value">「マグくわえたまま踊り始めた」</div>
+            </div>
+            <div class="field-block">
+              <div class="field-label">撮影シーン</div>
+              <div class="field-value"><ul>
+                <li>音楽や好きな動画が流れてるときに飲んでいる場面</li>
+                <li>体を揺らしながらストローをくわえてる姿を正面から</li>
+                <li>リズムに合ってると最高</li>
+              </ul></div>
+            </div>
+            <div class="field-block">
+              <div class="field-label">キャプション例</div>
+              <div class="field-value">「マグ離さないのに踊るの器用すぎる笑」</div>
+            </div>
+          </div>
+        </div>
+        <div class="no-item">
+          <div class="no-header">No.4　眉間にしわを寄せて一生懸命飲んでる</div>
+          <div class="no-body">
+            <div class="field-block">
+              <div class="field-label">フック</div>
+              <div class="field-value">「なんでそんな真剣な顔してるの笑」</div>
+            </div>
+            <div class="field-block">
+              <div class="field-label">撮影シーン</div>
+              <div class="field-value"><ul>
+                <li>ストロー飲みに集中しているときの顔アップ</li>
+                <li>眉間のしわと真剣な目をアップで撮る</li>
+                <li>飲み終わってぱっと顔が緩む瞬間まで撮ると完璧</li>
+              </ul></div>
+            </div>
+            <div class="field-block">
+              <div class="field-label">キャプション例</div>
+              <div class="field-value">「何をそんなに考えながら飲んでるの笑」</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- カテゴリーC -->
+<div id="tab-catC" class="tab-content">
+  <div class="section-wrapper">
+    <div class="section-title">Category C / 日常・癒し系</div>
+    <div class="category-block">
+      <div class="category-header">カテゴリーC　日常・癒し系</div>
+      <div class="category-body">
+        <div class="no-item">
+          <div class="no-header">No.5　朝一番に飲んでるシーン</div>
+          <div class="no-body">
+            <div class="field-block">
+              <div class="field-label">フック</div>
+              <div class="field-value">「うちの子の一日はこれで始まる」</div>
+            </div>
+            <div class="field-block">
+              <div class="field-label">撮影シーン</div>
+              <div class="field-value"><ul>
+                <li>起きてすぐ・寝ぼけ顔でマグを抱えてる朝の場面</li>
+                <li>ぼーっとした顔で飲んでる姿を自然光で</li>
+                <li>こちらが声をかけても反応が薄いとなお良い</li>
+              </ul></div>
+            </div>
+            <div class="field-block">
+              <div class="field-label">キャプション例</div>
+              <div class="field-value">「朝一は無言でこれを飲む。大人と同じ笑」</div>
+            </div>
+          </div>
+        </div>
+        <div class="no-item">
+          <div class="no-header">No.6　お風呂上がりに一気飲み</div>
+          <div class="no-body">
+            <div class="field-block">
+              <div class="field-label">フック</div>
+              <div class="field-value">「お風呂上がりだけはガチで飲む」</div>
+            </div>
+            <div class="field-block">
+              <div class="field-label">撮影シーン</div>
+              <div class="field-value"><ul>
+                <li>お風呂上がりでまだ少し濡れてる状態</li>
+                <li>ごくごく飲んでいる音が入るように静かな環境で</li>
+                <li>飲み終わった満足げな顔まで撮る</li>
+              </ul></div>
+            </div>
+            <div class="field-block">
+              <div class="field-label">キャプション例</div>
+              <div class="field-value">「お風呂上がりの一杯だけは絶対本気で飲む笑」</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- カテゴリーD -->
+<div id="tab-catD" class="tab-content">
+  <div class="section-wrapper">
+    <div class="section-title">Category D / 飲みっぷり（モッパン）系</div>
+    <div class="category-block">
+      <div class="category-header">カテゴリーD　飲みっぷり（モッパン）系</div>
+      <div class="category-body">
+        <div class="no-item">
+          <div class="no-header">No.7　飲みっぷりが良すぎる</div>
+          <div class="no-body">
+            <div class="field-block">
+              <div class="field-label">フック</div>
+              <div class="field-value">「この集中力どこから来てるの」</div>
+            </div>
+            <div class="field-block">
+              <div class="field-label">撮影シーン</div>
+              <div class="field-value"><ul>
+                <li>ストローマグをくわえて一心不乱に飲んでる顔の超アップ</li>
+                <li>眉間・目・口元が全部映る角度（正面〜やや上から）</li>
+                <li>飲んでる間ずっと顔を撮り続ける</li>
+                <li>途中で目が合う / 一瞬止まってまた飲み始める / 飲み終わって「ぷはー」の流れまで撮る</li>
+                <li>飲む音（チュッチュッ）はそのまま残す</li>
+                <li>マグのアップ不要。映ってればOK</li>
+              </ul></div>
+            </div>
+            <div class="field-block">
+              <div class="field-label">キャプション例</div>
+              <div class="field-value">「飲みっぷりが良すぎる」「毎回この顔する笑」「この集中力どこから来てるの」</div>
+            </div>
+          </div>
+        </div>
+        <div class="no-item">
+          <div class="no-header">No.8　飲んでる途中で目が合った</div>
+          <div class="no-body">
+            <div class="field-block">
+              <div class="field-label">フック</div>
+              <div class="field-value">「飲んでるとき目が合ったら動きが止まった笑」</div>
+            </div>
+            <div class="field-block">
+              <div class="field-label">撮影シーン</div>
+              <div class="field-value"><ul>
+                <li>飲んでいる最中にカメラをそっと近づける</li>
+                <li>目が合った瞬間にぴたっと止まる場面</li>
+                <li>数秒じーっとこちらを見る顔のアップ</li>
+                <li>また飲み始めるまでカットしない</li>
+              </ul></div>
+            </div>
+            <div class="field-block">
+              <div class="field-label">キャプション例</div>
+              <div class="field-value">「目が合ったら止まった笑　なんで」「監視されてるみたいな目してた」</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- カテゴリーE -->
+<div id="tab-catE" class="tab-content">
+  <div class="section-wrapper">
+    <div class="section-title">Category E / 記念演出系</div>
+    <div class="category-block">
+      <div class="category-header">カテゴリーE　記念演出系</div>
+      <div class="category-body">
+        <div class="no-item">
+          <div class="no-header">No.9　LEDキャンドル演出</div>
+          <div class="no-body">
+            <div class="field-block">
+              <div class="field-label">撮影シーン例</div>
+              <div class="field-value"><ul>
+                <li>Grosmimiのマグをテーブルに置くまたは赤ちゃんに持たせる</li>
+                <li>マグの横にLEDキャンドルを数本並べて灯す</li>
+                <li>部屋を少し暗くするとキャンドルの光が映えてきれい</li>
+                <li>ゆらゆら揺れる光を見てる赤ちゃんの表情を撮る</li>
+                <li>※火を使わないLEDなので安心して使用できる</li>
+              </ul></div>
+            </div>
+            <div class="field-block">
+              <div class="field-label">キャプション例</div>
+              <div class="field-value">「〇ヶ月、おめでとう。このマグと一緒に大きくなったね」</div>
+            </div>
+          </div>
+        </div>
+        <div class="no-item">
+          <div class="no-header">No.10　バルーン × ライト演出</div>
+          <div class="no-body">
+            <div class="field-block">
+              <div class="field-label">撮影シーン例</div>
+              <div class="field-value"><ul>
+                <li>バルーンの中にLEDライトを入れると内側から光ってキラキラになる</li>
+                <li>または背景にフェアリーライトを広げてキラキラの中でマグを持って飲んでる場面を撮る</li>
+                <li>赤ちゃんがバルーンやライトに興味を持って触ろうとする場面も映えるポイント</li>
+              </ul></div>
+            </div>
+            <div class="field-block">
+              <div class="field-label">キャプション例</div>
+              <div class="field-value">「キラキラの中で飲んでるの最高すぎた」</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">© Grosmimi Japan — Confidential / インフルエンサー様専用資料</div>
+
+<script>
+  function showTab(id, btn) {
+    document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+    document.getElementById('tab-' + id).classList.add('active');
+    btn.classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+
+</body>
+</html>
