@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>グロミミ コンテンツガイドライン</title>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: #f5f5f3;
+  color: #1a1a1a;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.page {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 60px 40px 80px;
+}
+
+/* ===== HERO ===== */
+.hero {
+  background: #fff;
+  border-radius: 20px;
+  padding: 52px 48px;
+  margin-bottom: 32px;
+  border: 1px solid #e8e8e6;
+  position: relative;
+  overflow: hidden;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0; right: 0;
+  width: 300px; height: 100%;
+  opacity: 0.04;
+  pointer-events: none;
+}
+.hero-eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.hero-eyebrow::before {
+  content: '';
+  display: inline-block;
+  width: 24px; height: 2px;
+  border-radius: 2px;
+}
+.hero h1 {
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin-bottom: 14px;
+  color: #111;
+}
+.hero-product {
+  font-size: 14px;
+  font-weight: 400;
+  color: #888;
+  letter-spacing: 0.03em;
+}
+
+/* ===== SECTION ===== */
+.section {
+  margin-bottom: 28px;
+}
+.section-label {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  padding-left: 2px;
+}
+.section-subtitle {
+  font-size: 13px;
+  font-weight: 700;
+  color: #333;
+  margin: 20px 0 8px;
+  padding-left: 2px;
+}
+
+/* ===== TABLE CARD ===== */
+.table-card {
+  background: #fff;
+  border: 1px solid #e8e8e6;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.table-card-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: #555;
+  letter-spacing: 0.05em;
+  padding: 13px 20px;
+  background: #fafafa;
+  border-bottom: 1px solid #eee;
+}
+.trow {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  border-bottom: 1px solid #f0f0ee;
+}
+.trow:last-child { border-bottom: none; }
+.tlabel {
+  padding: 14px 20px;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #999;
+  background: #fafafa;
+  border-right: 1px solid #f0f0ee;
+  display: flex;
+  align-items: flex-start;
+  letter-spacing: 0.02em;
+}
+.tvalue {
+  padding: 14px 20px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.8;
+  white-space: pre-line;
+}
+
+/* ===== DIVIDER ===== */
+.divider {
+  height: 1px;
+  background: #e8e8e6;
+  margin: 40px 0;
+}
+
+/* ===== PRODUCT HEADING ===== */
+.product-heading {
+  background: #fff;
+  border: 1px solid #e8e8e6;
+  border-radius: 14px;
+  padding: 28px 32px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.product-icon {
+  width: 48px; height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+.product-heading-title {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+.product-heading-sub {
+  font-size: 12px;
+  color: #999;
+  margin-top: 3px;
+}
+
+/* ===== CATEGORY CARD ===== */
+.cat-card {
+  background: #fff;
+  border: 1px solid #e8e8e6;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+.cat-header {
+  padding: 16px 20px;
+  border-bottom: 1px solid #f0f0ee;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.cat-badge {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  padding: 4px 10px;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+.cat-title-text {
+  font-size: 15px;
+  font-weight: 700;
+  color: #111;
+}
+.cat-body {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+}
+.cat-key {
+  padding: 15px 20px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #aaa;
+  background: #fafafa;
+  border-right: 1px solid #f0f0ee;
+  border-bottom: 1px solid #f0f0ee;
+  display: flex;
+  align-items: flex-start;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.cat-val {
+  padding: 15px 20px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.85;
+  border-bottom: 1px solid #f0f0ee;
+  white-space: pre-line;
+}
+.cat-row-last .cat-key,
+.cat-row-last .cat-val {
+  border-bottom: none;
+}
+
+/* ===== NG SECTION ===== */
+.ng-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+.ng-card {
+  background: #fff;
+  border: 1px solid #ffd0d0;
+  border-radius: 12px;
+  padding: 16px 18px;
+}
+.ng-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #e03333;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.ng-x {
+  width: 16px; height: 16px;
+  background: #e03333;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 9px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.ng-text {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.7;
+}
+
+/* ===== SNS ===== */
+.sns-card {
+  background: #fff;
+  border: 1px solid #e8e8e6;
+  border-radius: 14px;
+  padding: 24px 28px;
+  display: flex;
+  gap: 48px;
+}
+.sns-label {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #bbb;
+  margin-bottom: 6px;
+}
+.sns-value {
+  font-size: 14px;
+  font-weight: 600;
+  color: #222;
+}
+
+@media print {
+  body { background: #f5f5f3 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .cat-card, .table-card, .hero, .product-heading, .ng-card, .sns-card { break-inside: avoid; }
+}
+
+.hero-eyebrow { color: #D4527A; }
+.hero-eyebrow::before { background: #D4527A; }
+.hero h1 span { color: #D4527A; }
+.section-label { color: #D4527A; }
+.tlabel { color: #D4527A; opacity: 0.7; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-eyebrow">Content Guideline</div>
+    <h1>グロミミ<br><span>コンテンツガイドライン</span></h1>
+    
+  </div>
+
+  <!-- 必須要件 -->
+  <div class="section">
+    <div class="section-label">Requirements — 必須要件</div>
+
+    <div class="section-subtitle">オリジナル動画ファイルの提供</div>
+    <div class="table-card">
+      <div class="trow"><div class="tlabel">ファイル提供</div><div class="tvalue">弊社での二次利用を想定して、オリジナル動画ファイルをご提供ください。</div></div>
+      <div class="trow"><div class="tlabel">音楽</div><div class="tvalue">使用する音楽は著作権フリーのものをご使用ください。</div></div>
+      <div class="trow"><div class="tlabel">字幕</div><div class="tvalue">動画内に字幕（テロップ）は含めずにご提出ください。</div></div>
+    </div>
+
+    <div class="section-subtitle">広告コードの付与</div>
+    <div class="table-card">
+      <div class="trow"><div class="tlabel">アクセス許可</div><div class="tvalue">投稿用にSpark Adsコード、もしくはホワイトリストコードへのアクセス許可をお願いいたします。</div></div>
+    </div>
+
+    <div class="section-subtitle">納期・確認・承認</div>
+    <div class="table-card">
+      <div class="trow"><div class="tlabel">納期</div><div class="tvalue">商品到着後、2〜3週間を目安にコンテンツのアップロードをお願いいたします。</div></div>
+      <div class="trow"><div class="tlabel">確認・承認</div><div class="tvalue">投稿前に弊社チームにて内容を確認・承認させていただきます。承認完了後にアップロードをお願いいたします。※アップロード日は事前にご相談のうえ調整いたしますが、状況により変更となる場合がございます。</div></div>
+    </div>
+  </div>
+
+  <!-- 撮影共通ルール -->
+  <div class="section">
+    <div class="section-label">Shooting Rules — 撮影共通ルール</div>
+    <div class="table-card">
+      <div class="trow"><div class="tlabel">撮影形式</div><div class="tvalue">縦型撮影（9:16）</div></div>
+      <div class="trow"><div class="tlabel">明るさ</div><div class="tvalue">自然光推奨。窓際・昼間がベスト</div></div>
+      <div class="trow"><div class="tlabel">動画の尺</div><div class="tvalue">動画の合計時間は35秒～45秒としてください。</div></div>
+      <div class="trow"><div class="tlabel">字幕</div><div class="tvalue">全ナレーションに字幕を入れてください</div></div>
+      <div class="trow"><div class="tlabel">商品の映り方</div><div class="tvalue">機能がわかるようにしっかり映してください</div></div>
+    </div>
+  </div>
+
+
+  <!-- NG -->
+  <div class="section">
+    <div class="section-label" style="color:#e03333;">NG — 必ずご確認ください</div>
+    <div class="ng-grid">
+    <div class="ng-card">
+      <div class="ng-label"><div class="ng-x">✕</div>他社商品の映り込み</div>
+      <div class="ng-text">冒頭3秒以内に他社商品を映さないでください。</div>
+    </div>
+    <div class="ng-card">
+      <div class="ng-label"><div class="ng-x">✕</div>宣伝・PR感</div>
+      <div class="ng-text">「ブランドからいただきました」等の表現はNGです。自分で選んだアイテムとして自然に紹介してください。</div>
+    </div>
+    <div class="ng-card">
+      <div class="ng-label"><div class="ng-x">✕</div>ウォーターマーク</div>
+      <div class="ng-text">テキストスタンプ・ウォーターマーク・他社ロゴは動画内に入れないでください。</div>
+    </div>
+    <div class="ng-card">
+      <div class="ng-label"><div class="ng-x">✕</div>鏡写し・反転映像</div>
+      <div class="ng-text">Grosmimiの文字が反転して映る映像はNGです。投稿前に文字が正しく読めるか確認してください。</div>
+    </div>
+    <div class="ng-card">
+      <div class="ng-label"><div class="ng-x">✕</div>著作権のある音楽</div>
+      <div class="ng-text">著作権フリーの音楽のみ使用してください。人気楽曲・テレビ曲・アーティスト楽曲はNGです。</div>
+    </div>
+    <div class="ng-card">
+      <div class="ng-label"><div class="ng-x">✕</div>未承認での投稿</div>
+      <div class="ng-text">投稿前に必ず弊社チームの確認・承認を受けてください。承認前のアップロードはお控えください。</div>
+    </div></div>
+  </div>
+
+  <!-- SNS -->
+  <div class="section">
+    <div class="section-label">SNS / アカウント情報</div>
+    <div class="sns-card">
+      <div>
+        <div class="sns-label">Instagram</div>
+        <div class="sns-value" style="color:#D4527A;">@grosmimi_japan</div>
+      </div>
+      <div>
+        <div class="sns-label">TikTok</div>
+        <div class="sns-value">grosmimi_japan</div>
+      </div>
+      <div>
+        <div class="sns-label">ハッシュタグ</div>
+        <div class="sns-value">#グロミミ #Grosmimi #ストローマグ #スマートマグ #ppsu</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
